@@ -1,10 +1,10 @@
 # LeaveManager — Web
 
-![CI](https://github.com/<ton-compte>/leavemanager-web/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/terroyassine-design/leavemanager-web/actions/workflows/ci.yml/badge.svg)
 
 Interface React de LeaveManager : **un employé pose ses congés, son manager les valide ou les refuse.**
 
-> API Spring Boot : [leavemanager-api](https://github.com/<ton-compte>/leavemanager-api)
+> API Spring Boot : [leavemanager-api](https://github.com/terroyassine-design/leavemanager-api)
 
 ## Démo
 
