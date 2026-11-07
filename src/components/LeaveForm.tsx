@@ -9,7 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Textarea } from '@/components/ui/textarea'
-import { LEAVE_TYPE_LABELS, todayIso } from '@/lib/format'
+import { formatDays, LEAVE_TYPE_LABELS, todayIso } from '@/lib/format'
 import type { CreateLeavePayload, LeaveType } from '@/types'
 import { ErrorMessage } from './ErrorMessage'
 import { FormField } from './FormField'
@@ -24,7 +24,7 @@ export function LeaveForm() {
     mutationFn: createLeave,
     onSuccess: (leave) => {
       setForm(EMPTY_FORM)
-      toast.success('Demande envoyée', { description: `${leave.workingDays} jour(s) en attente de validation.` })
+      toast.success('Demande envoyée', { description: `${formatDays(leave.workingDays)} en attente de validation.` })
       // Refetch the lists so the new request appears
       queryClient.invalidateQueries({ queryKey: ['leaves'] })
     },

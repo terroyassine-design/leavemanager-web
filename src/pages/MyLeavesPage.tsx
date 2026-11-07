@@ -121,7 +121,7 @@ function Stat({ icon: Icon, label, value, highlight = false }: StatProps) {
     <Card className={cn(highlight && 'bg-primary text-primary-foreground ring-primary')}>
       <CardContent className="flex items-center justify-between gap-3">
         <div>
-          <dt className={cn('text-sm', highlight ? 'text-primary-foreground/80' : 'text-muted-foreground')}>{label}</dt>
+          <dt className={cn('text-sm', highlight ? 'text-primary-foreground/95' : 'text-muted-foreground')}>{label}</dt>
           <dd className="mt-1 text-2xl font-semibold tracking-tight">{value}</dd>
         </div>
         <span
