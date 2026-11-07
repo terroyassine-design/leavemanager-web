@@ -37,6 +37,7 @@
   --color-panel-foreground: var(--panel-foreground);
   --color-border: var(--border);
   --color-input: var(--input);
+  --color-input-border: var(--input-border);
   --color-ring: var(--ring);
 
   --radius-sm: calc(var(--radius) * 0.6);
@@ -61,9 +62,10 @@
   --secondary: oklch(0.967 0.003 264.54);
   --secondary-foreground: var(--foreground);
   --muted: oklch(0.967 0.003 264.54);
-  --muted-foreground: oklch(0.551 0.027 264.36);
+  --muted-foreground: oklch(0.543 0.027 264.36);
   --border: oklch(0.928 0.006 264.53);
   --input: oklch(0.872 0.01 258.34);
+  --input-border: oklch(0.65 0.01 258.34); /* at least 3:1 on card and background */
 
   /* Brand: teal */
   --primary: oklch(0.511 0.096 186.39);
@@ -72,10 +74,10 @@
   --accent-foreground: oklch(0.386 0.063 188.42);
   --ring: oklch(0.6 0.118 184.7);
 
-  /* Status colors (leave requests, alerts) */
-  --success: oklch(0.527 0.137 150.07);
-  --warning: oklch(0.555 0.146 49);
-  --destructive: oklch(0.577 0.245 27.33);
+  /* Status colors (leave requests, alerts): at least 4.5:1 as text on their own 10% tint */
+  --success: oklch(0.507 0.137 150.07);
+  --warning: oklch(0.535 0.143 49);
+  --destructive: oklch(0.515 0.21 27.33);
 
   /* Brand panel (login screen): same deep teal in light and dark mode */
   --panel: oklch(0.386 0.063 188.42);
@@ -96,6 +98,7 @@
   --muted-foreground: oklch(0.707 0.022 261.33);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
+  --input-border: oklch(1 0 0 / 35%);
 
   --primary: oklch(0.777 0.152 181.91);
   --primary-foreground: oklch(0.277 0.046 192.52);
@@ -105,7 +108,7 @@
 
   --success: oklch(0.792 0.209 151.71);
   --warning: oklch(0.828 0.189 84.43);
-  --destructive: oklch(0.704 0.191 22.22);
+  --destructive: oklch(0.73 0.166 22.22);
 }
 
 @layer base {
